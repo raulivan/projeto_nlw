@@ -1,0 +1,61 @@
+// NODE
+Criar o projeto
+npm init -y
+> -y ignora as perguntas
+npm install express --save
+npm install @types/express -d
+>> -d fala que é dependencia de desenvolvimento
+
+>pacote que faz o node interprestar typescript
+npm install ts-node -d
+
+>pacote do typescript
+npm install typescript -d
+
+>configurando o TS
+npx tsc --init
+
+>executar um arquivo typescript
+npx ts-node src\server.ts
+>> executa ignorandos os node_modules
+npx ts-node-dev --ignore node_modules src/server.ts
+
+>Pacote de atualziação dinamica da aplicação
+npm install ts-node-dev -D
+
+>executar a aplicação com autoupdate
+npx ts-node-dev src\server.ts
+
+>executar um scrit definido no package.json
+npm run dev
+>> dev é o nome do script
+
+>ORM para NODE, funciona com os principais bancos de dados 
+Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift
+>>site oficinalhttp://knexjs.org
+npm install knex
+>>para usar o sql server
+npm install mssql
+
+>Tratar caminhos no node
+import path from 'path';
+__dirname
+path.resolve(__dirname,'pasta,'pasta','arquivo');
+
+>Executar o migrations
+npx knex migrate:latest --knexfile knexfile.ts migrate:latest
+>>ou
+npx knex --knexfile knexfile.ts migrate:latest
+
+>Padrão de nomenclatura para metodos de um controller
+	index - para a listagem
+	show - para exibir um unico registro
+	create
+	update
+	delete
+> Ferramenta tipo o Postman, insomina
+
+>Instalação do cors, faz controle de urls
+npm install cors
+npm install @types/cors -D
+

@@ -1,0 +1,82 @@
+>Criando um projet novo com react
+npx create-react-app web --template=typescript
+
+>limpar o projeto
+pode apagar os arquivos:
+	pasta public
+		deixar apenas o arquivo index.html
+	pasta src
+		apagr 
+			App.test.tsx
+			index.css
+			logo.svg
+			serviceWorker.ts
+			setupTests.ts
+	README.md
+	
+	apos a exclusão remover a dependencias do arquivos que apresentarem erros.
+	Exemplos:
+		index.html
+		
+		<!DOCTYPE html>
+		<html lang="en">
+		  <head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<meta name="theme-color" content="#34cb79" />
+			
+			<title>Ecoleta</title>
+		  </head>
+		  <body>
+			<noscript>You need to enable JavaScript to run this app.</noscript>
+			<div id="root"></div>
+		  </body>
+		</html>
+		
+		index.tsx
+		
+		import React from 'react';
+		import ReactDOM from 'react-dom';
+		import App from './App';
+
+		ReactDOM.render(
+		  <React.StrictMode>
+			<App />
+		  </React.StrictMode>,
+		  document.getElementById('root')
+		);
+		
+		app.tsx
+		
+		import React from 'react';
+		import './App.css';
+
+		function App() {
+		  return (
+			<h1>Ola Mundo </h1>
+		  );
+		}
+
+		export default App;
+
+> Usar icones no react
+npm install react-icons
+
+>Para controlar rotas de ´paginas
+npm install react-router-dom
+npm install @types/react-router-dom -D
+
+>API gratuita para se trabalhar com mapas
+https://leafletjs.com
+https://react-leaflet.js.org
+npm install leaflet react-leaflet
+npm install @types/react-leaflet
+
+>Biblioteca responsavel por fazer requisições HTTP
+npm install axios
+
+>O IBGE possui um API publica show
+https://servicodados.ibge.gov.br/api/docs
+
+> Material de Consulta do Typescript com react
+https://github.com/typescript-cheatsheets/react-typescript-cheatsheet
