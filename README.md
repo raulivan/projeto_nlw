@@ -1,2 +1,4 @@
-# projeto_nlw
-Projeto usando backend NodeJS com typescript e frontend com react
+# Projeto NLW
+Projeto usando backend NodeJS com typescript e frontend com react.
+
+Projeto desenvolvido durante a semana NLW da Rocketseat.
